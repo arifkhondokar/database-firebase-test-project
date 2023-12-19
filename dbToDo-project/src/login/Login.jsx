@@ -6,7 +6,8 @@ const Login = () => {
     const database = getDatabase();
     let [info, setInfo] = useState (
         {
-            fullName: "",
+            firstName: "",
+            lastName: "",
             email: "",
             password: ""
         }
@@ -31,7 +32,10 @@ const Login = () => {
             <h2>LOGIN</h2>
             <form action="#">
                 <div className ="input-field">
-                    <input name ="fullName" type='text' placeholder='Enter Your Name' onChange={handelForm} required/>
+                    <input name ="firstName" type='text' placeholder='Enter Your FirstName' onChange={handelForm} required/>
+                </div>
+                <div className ="input-field">
+                    <input name ="lastName" type='text' placeholder='Enter Your LastName' onChange={handelForm} required/>
                 </div>
                 <div className ="input-field">
                     <input name ="email" type='email' placeholder='Enter Your Email'  onChange={handelForm} required/>
