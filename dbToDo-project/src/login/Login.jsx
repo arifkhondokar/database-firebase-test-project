@@ -31,13 +31,13 @@ const Login = () => {
             <h2>LOGIN</h2>
             <form action="#">
                 <div className ="input-field">
-                    <input name ="fullName" placeholder='Enter Your Name' onChange={handelForm} required/>
+                    <input name ="fullName" type='text' placeholder='Enter Your Name' onChange={handelForm} required/>
                 </div>
                 <div className ="input-field">
-                    <input name ="email" placeholder='Enter Your Email'  onChange={handelForm} required/>
+                    <input name ="email" type='email' placeholder='Enter Your Email'  onChange={handelForm} required/>
                 </div>
                 <div className ="input-field">
-                    <input name ="password"placeholder='Enter Your Password'  onChange={handelForm} required/>
+                    <input name ="password" type='password' placeholder='Enter Your Password'  onChange={handelForm} required/>
                 </div>
                 
                 <button name ="submit" onClick={handelSubmit}>Log In</button>
